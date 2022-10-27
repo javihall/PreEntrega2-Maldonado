@@ -206,11 +206,13 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(194, 16, 16);
+
 }
 
 .main-containter {
     width: 70%;
+    background-color: #d8d8d8;
 }
 
 /*********** Main banner **********/
@@ -221,7 +223,7 @@ body {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    background: url(Img/carousel1.png);
+    background: url(img/carousel1.png);
     background-size: cover;
     background-position: center;
 
@@ -257,6 +259,64 @@ body {
 
 /*********** END Main banner **********/
 /*********** Categorys style**********/
+
+/* category mobile */
+@media all and (max-width: 1024px)  {
+
+    .grid_category {
+        background-color: red;
+        display: none !important;
+    }
+
+    .grid_category_mobile {
+        display: flex !important;
+    }
+    
+    
+}
+
+.grid_category_mobile {
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+}
+
+.img_category_container {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.img_category_container img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    position: absolute;
+}
+
+.mobile_category {
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+
+.grid_category_mobile a {
+    text-decoration: none;
+    color: #151515;
+}
+.mobile_category span {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+}
+
 .grid_category {
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 1fr));
@@ -265,6 +325,7 @@ body {
     grid-row-gap: 10px;
 
 }
+
 
 .category1 {
     grid-area: 1 / 1 / 4 / 3;
@@ -285,7 +346,7 @@ body {
 .category1 {
     background-color: #f7c2b0;
     border-radius: 5px;
-    background-image: url(Img/maquillaje.jpg);
+    background-image: url(img/maquillaje.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -316,7 +377,7 @@ body {
 
 .category2 {
     border-radius: 5px;
-    background-image: url(Img/esmaltes.png);
+    background-image: url(img/esmaltes.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -327,7 +388,7 @@ body {
 
 .category3 {
     border-radius: 5px;
-    background-image: url(Img/nails.jpg);
+    background-image: url(img/nails.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -338,7 +399,7 @@ body {
 
 .category4 {
     border-radius: 5px;
-    background-image: url(Img/pestania2.jpg);
+    background-image: url(img/pestania2.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
