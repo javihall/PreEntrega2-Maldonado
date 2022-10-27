@@ -1,0 +1,669 @@
+/* ********* Reset ********* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    line-height: normal;
+}
+
+
+/* ********* Custom Properties***** */
+:root {
+    --main-color: #ffd8cb;
+    --font: 'Montserrat', sans-serif;
+}
+
+/***************** Header style *************/
+.header {
+    background-color: var(--main-color);
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.navPrincipal {
+    width: 70%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1200px; */
+}
+
+.content-logo {
+    height: 100%;
+    display: flex;
+}
+
+.header__link {
+    height: 140px;
+    width: auto;
+}
+
+.header__link__logo {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.header__link__cartimg {
+    width: 100%;
+}
+
+/* correccion de bootstrap */
+img {
+    vertical-align: baseline;
+}
+
+/* fin correccion de bootstrap */
+
+.headercart__link {
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.buscaricon {
+    width: 10px;
+    height: 10px;
+}
+
+.content-login-account {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-ul {
+    display: flex;
+    padding-right: 32px;
+    margin-bottom: 0;
+}
+
+.main-ul li {
+    list-style: none;
+    margin: 4px;
+    padding: 0 8px;
+}
+
+.nav-search-container {
+    display: flex;
+    align-items: flex-end;
+    height: 50%;
+}
+
+
+.login-cart-container {
+    display: flex;
+    align-items: flex-end;
+    height: 50%;
+}
+
+.header__login {
+    padding-right: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-search {
+    background-color: transparent;
+    border: 1px black solid;
+    padding: 2px 4px;
+    width: 32px;
+    cursor: pointer;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.search-input {
+    margin: 4px;
+    padding: 2px;
+    border: none;
+    border-bottom: 1px black solid;
+    width: 70%;
+    background: transparent;
+}
+
+.main-ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    padding: 0 2px;
+}
+
+.main-ul li a:hover {
+    /* border-bottom: 2px solid white; */
+    /* outline: 2px solid white ; */
+    border-radius: 5px;
+    background-color: black;
+    color: whitesmoke;   
+}
+
+.current-page {
+    border-bottom: 2px solid black;
+}
+
+.toggle-btn {
+    display: none;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+/****** Header Breakpoints ********/
+@media (max-width: 768px) {
+
+    .main-ul {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        transform: scale(0);
+    }
+
+    /* 
+    .toggle-btn {
+        display: block;
+    }
+
+    .toggle-btn.active::before {
+        content: "cerrar";
+    }
+
+    .main-ul.active {
+        transform: scale(1);
+    }*/
+}
+
+/**************** End Header Style ************/
+
+body {
+    background-color: black;
+}
+
+/************** MAIN Style *******************/
+
+.main {
+    padding-top: 150px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+}
+
+.main-containter {
+    width: 70%;
+}
+
+/*********** Main banner **********/
+.containter-main-banner {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    background: url(Img/carousel1.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.p-banner {
+    font-family: 'Lato', sans-serif;
+    color: #9b9b9b;
+    font-size: 16px;
+    max-width: 400px;
+}
+
+.readMore_btn {
+    margin-top: 10px;
+    min-width: 120px;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    border: 2px solid #ffd8cb;
+    background: #ffd8cb;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.readMore_btn:hover {
+    background: #fff;
+    color: #f7c2b0;
+}
+
+/*********** END Main banner **********/
+/*********** Categorys style**********/
+.grid_category {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+}
+
+.category1 {
+    grid-area: 1 / 1 / 4 / 3;
+}
+
+.category2 {
+    grid-area: 4 / 1 / 6 / 4;
+}
+
+.category3 {
+    grid-area: 1 / 3 / 4 / 5;
+}
+
+.category4 {
+    grid-area: 4 / 4 / 6 / 5;
+}
+
+.category1 {
+    background-color: #f7c2b0;
+    border-radius: 5px;
+    background-image: url(Img/maquillaje.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.grid_category a div {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    padding: 2%;
+    box-shadow: 0 0 25px #222;
+    backdrop-filter: invert(80%) blur(1px);
+
+}
+
+.grid_category a div:hover {
+    backdrop-filter: invert(0%) blur(5px);
+    transition: 1s;
+    color: black;
+    padding: 3%;
+}
+
+
+.category2 {
+    border-radius: 5px;
+    background-image: url(Img/esmaltes.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.category3 {
+    border-radius: 5px;
+    background-image: url(Img/nails.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.category4 {
+    border-radius: 5px;
+    background-image: url(Img/pestania2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.h2_categorias {
+    margin: 10px 0;
+    color: #151515;
+    font-size: 48px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.line_categorias {
+    width: 150px;
+    margin: 20px auto;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #ffd8cb;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    opacity: 1;
+}
+
+.p_categorias_containet {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.p_categorias {
+    width: 70%;
+    font-family: sans-serif;
+    color: #9b9b9b;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*********** END Categorys style**********/
+/*********** flexbox Productos ***********/
+
+.section_producto_container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto_container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.product_card {
+    width: 368px;
+    height: 465px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: white 3px solid;
+    transition-duration: 0.4s;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+
+.product_card:hover {
+    border: #acacac 3px solid;
+}
+
+
+.producto-image {
+    width: 320px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.producto-image img {
+    width: auto;
+    height: 100%;
+    transition: 0.2s;
+}
+
+.producto-image img:hover {
+    transform: scale(1.05);
+
+}
+
+.product-info h2 {
+    font-size: 18px;
+    padding: 0 25px;
+    margin-bottom: 10px;
+    height: 44px;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.product-btn {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.product-link {}
+
+
+.product-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 0;
+    width: 320px;
+    height: 43px;
+    text-decoration: none;
+    color: #f7c2b0;
+    transition: 0.3s;
+    height: auto;
+    border: #f7c2b0 2px solid;
+    font-weight: bold;
+
+}
+
+.product-link:hover {
+    background-color: #f7c2b0;
+    color: black;
+    font-weight: bold;
+}
+
+
+.product-btn button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 8px;
+    background: #f7c2b0;
+    border: 2px solid #f7c2b0;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.product-btn button:hover {
+    background: white;
+    border: 2px solid #f7c2b0;
+    color: #f7c2b0;
+}
+
+/************** END MAIN Style *******************/
+
+/**************FOOTER Style*****************/
+
+.footer {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    box-shadow: 1px 10px 28px -4px rgba(255, 216, 203, 0.73);
+    -webkit-box-shadow: 1px 10px 28px -4px rgba(255, 216, 203, 0.73);
+    -moz-box-shadow: 1px 10px 28px -4px rgba(255, 216, 203, 0.73);
+}
+
+.footer_container {
+
+    width: 70%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.col {
+    min-width: 250px;
+    color: rgb(78, 78, 78);
+    /* padding: 0 2rem; */
+    max-width: 380px;
+
+}
+
+.col h3 {
+    color: black;
+    font-size: 21px;
+    padding-top: 10px;
+}
+
+.sm-icons li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.sm-icons li a i {
+    color: #f7c2b0;
+    font-size: 20px;
+}
+
+.sm-icons li a i:hover {
+    color: #151515;
+}
+
+/* correccion para bootstrap */
+ul {
+    padding-left: 0;
+}
+
+/* fin correccion para bootstrap */
+
+.navegacion-list li,
+.info-contacto-list li {
+    list-style: none;
+}
+
+.navegacion-list li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+
+.navegacion-list li a:hover {
+    text-decoration: underline;
+    background-color: #d8d8d8;
+}
+
+.info-contacto-list li i {
+    color: #f7c2b0;
+}
+
+.line_footer {
+    max-width: 100%;
+    width: 90px;
+    margin: 10px 0;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #ffd8cb;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    opacity: 1;
+}
+
+.email_enviar_btn {
+    margin-top: 10px;
+    color: black;
+    padding: 1px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    border: 1px solid black;
+    background: #ffd8cb;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.email_enviar_btn:hover {
+    background: black;
+    color: white;
+    border: 1px solid #f7c2b0;
+}
+
+/***********FOOTER copy***********/
+
+.footer_copy {
+    display: flex;
+    color: rgb(34, 33, 33);
+    justify-content: center;
+    align-items: center;
+    min-height: 61px;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+
+}
+
+.logo-leon {
+    width: 70px;
+}
+
+/*********** END FOOTER copy***********/
+
+/****************** MAIN Preguntas frecuentes *****************/
+
+.preguntas_introinfo p {
+    margin: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.preguntas_introinfo p a {
+    color: #f7c2b0;
+}
+
+
+.preguntas_section {
+    display: flex;
+
+}
+
+.preguntas_info {
+    background-color: aqua;
+    width: 50%;
+    height: auto;
+}
+
+.preguntas_container {
+    border: #9b9b9b 1px solid;
+    width: 50%;
+    height: auto;
+
+}

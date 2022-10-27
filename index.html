@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>León Mayorista</title>
+    <script src="script.js"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- Bootstrap mobilefirst -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navPrincipal">
+
+            <div class="content-logo">
+
+                <a class="header__link" href="Index.html"><img class="header__link__logo" src="Img/Logo1.png"
+                        alt="Logo"></a>
+
+            </div>
+
+            <button class="toggle-btn">holaaaaaaaaa</button>
+
+            <div class="content-login-account">
+                <div class="login-cart-container">
+                    <a class="header__login" href="Login-registrate.html">CREAR CUENTA/INICIAR SESIÓN</a>
+
+                    <a class="headercart__link" href="#"><img class="header__link__cartimg" src="Img/shopping-cart.png"
+                            alt="carrito de compra"></a>
+                </div>
+
+                <div class="nav-search-container">
+                    <ul class="main-ul">
+                        <li class="header__primerNav"><a class="current-page" href="#">Home</a></li>
+                        <li class="header__primerNav"><a href="#">Tienda</a></li>
+                        <li class="header__primerNav"><a href="#">Contacto</a></li>
+                        <li class="header__primerNav"><a href="pregfrecuentes.html">Pregunta frecuente</a></li>
+                        <li class="header__primerNav"><a href="#">Nosotros</a></li>
+                    </ul>
+
+
+                    <form action="search">
+                        <label for="search-inp"></label>
+                        <input class="search-input" id="search-inp" type="search" placeholder="Buscar">
+                        <button class="btn-search" type="submit"><img class="buscaricon" src="Img/search.png"
+                                alt="buscar"></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!------------MAIN------------>
+    <main class="main">
+        <div class="main-containter">
+            <!-- Main banner  -->
+            <section>
+                <div class="containter-main-banner">
+                    <h1 class="h1-banner">León Mayorista</h1>
+                    <hr class="line_footer">
+                    <p class="p-banner">ELIGE, PAGA Y RECIBE TU PEDIDO SIN MOVERTE DE TU CASA.<br>Compra Mínima $5.000 a
+                        partir De $30.000 Hacemos Envio Gratis Solo Por ANDREANI</p>
+                    <a href="#" class="readMore_btn">Leer más</a>
+
+                </div>
+            </section>
+            <!-- END Main banner -->
+            <!-- Categorys -->
+            <section>
+                <h2 class="h2_categorias">Categorias</h2>
+                <hr class="line_categorias">
+                <div class="p_categorias_containet">
+                    <p class="p_categorias">El requisito mínimo de Venta Mayorista es de $50.000 Descuento 15% - Compras
+                        mayores a $100.000 Descuento del 20% No hay mínimos por artículo, pedí la cantidad que quieras
+                        para que puedas brindar exclusividad a tus clientas.</p>
+                </div>
+                <div class="grid_category">
+
+                    <a class="category1" href="#">
+                        <div>Maquillajes</div>
+                    </a>
+                    <a class="category2" href="#">
+                        <div>Accesorios</div>
+                    </a>
+                    <a class="category3" href="#">
+                        <div>Nails</div>
+                    </a>
+                    <a class="category4" href="#">
+                        <div>Pestañas</div>
+                    </a>
+
+
+                </div>
+
+            </section>
+            <!-- END Categorys -->
+
+            <!-- ************* flexbox productos************-->
+            <section>
+                <h2 class="h2_categorias">Productos destacados</h2>
+                <hr class="line_categorias">
+                <div class="section_producto_container">
+
+                    <div class="producto_container">
+                        <div class="product_card">
+                            <div class="producto-image">
+                                <img src="img/lima.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h2>ARNOVAL Lima ST. Black Mambo 100/180</h2>
+                                <p>$580</p>
+                            </div>
+                            <div class="product-btn">
+                                <button type="button">Añadir al carrito</button>
+                            </div>
+
+                            <a class="product-link" href="#">Más información</a>
+
+                        </div>
+                        <div class="product_card">
+                            <div class="producto-image">
+                                <img src="img/alicate.png" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h2>Alicate corta cutículas City Girl</h2>
+                                <p>$890</p>
+                            </div>
+                            <div class="product-btn">
+                                <button type="button">Añadir al carrito</button>
+                            </div>
+                            <a class="product-link" href="#">Más información</a>
+                        </div>
+                        <div class="product_card">
+                            <div class="producto-image">
+                                <img src="img/polimero.jpeg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h2>Polímero individual RNS- #1</h2>
+                                <p>$620</p>
+                            </div>
+                            <div class="product-btn">
+                                <button type="button">Añadir al carrito</button>
+                            </div>
+                            <a class="product-link" href="#">Más información</a>
+                        </div>
+                        <div class="product_card">
+                            <div class="producto-image">
+                                <img src="img/fresadecarburo.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h2>Fresa de Carburo - Barril - Banda azul</h2>
+                                <p>$1.200</p>
+                            </div>
+                            <div class="product-btn">
+                                <button type="button">Añadir al carrito</button>
+                            </div>
+                            <a class="product-link" href="#">Más información</a>
+                        </div>
+                        <div class="product_card">
+                            <div class="producto-image">
+                                <img src="img/cabinauvled.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h2>CABINA UV/LED ~ SUN MINI 6W Rosa</h2>
+                                <p>$980</p>
+                            </div>
+                            <div class="product-btn">
+                                <button type="button">Añadir al carrito</button>
+                            </div>
+                            <a class="product-link" href="#">Más información</a>
+                        </div>
+                        <div class="product_card">
+                            <div class="producto-image">
+                                <img src="img/pincelsirena.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h2>Pincel Sirena / Redondo Biselado</h2>
+                                <p>$530</p>
+                            </div>
+                            <div class="product-btn">
+                                <button type="button">Añadir al carrito</button>
+                            </div>
+                            <a class="product-link" href="#">Más información</a>
+                        </div>
+                        <div class="product_card">
+                            <div class="producto-image">
+                                <img src="img/polimerodarkcover.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h2>Polímero Dark Cover Pink 45 grls - Nailshow</h2>
+                                <p>$2.500</p>
+                            </div>
+                            <div class="product-btn">
+                                <button type="button">Añadir al carrito</button>
+                            </div>
+                            <a class="product-link" href="#">Más información</a>
+                        </div>
+                        <div class="product_card">
+                            <div class="producto-image">
+                                <img src="img/bondernailshow.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h2>Bonder Nailshow 10 ml</h2>
+                                <p>$1.260</p>
+                            </div>
+                            <div class="product-btn">
+                                <button type="button">Añadir al carrito</button>
+                            </div>
+                            <a class="product-link" href="#">Más información</a>
+                        </div>
+                        <div class="product_card">
+                            <div class="producto-image">
+                                <img src="img/polimeronailshow.jpeg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h2>Polímero Nailshow 14 grs - Cover Diamond Pink</h2>
+                                <p>$760</p>
+                            </div>
+                            <div class="product-btn">
+                                <button type="button">Añadir al carrito</button>
+                            </div>
+                            <a class="product-link" href="#">Más información</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- FIN MAIN  -->
+
+    <!------------FOOTER------------>
+    <footer>
+        <div class="footer">
+            <!-- FOOTER PRINCIPAL -->
+
+            <div class="footer_container">
+                <div class="row">
+
+                    <div class="col">
+                        <h3>Navegacion</h3>
+                        <hr class="line_footer">
+                        <ul class="navegacion-list">
+                            <li><a href="#">Productos</a></li>
+                            <li><a href="contacto.html">Contactos</a></li>
+                            <li><a href="Preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="Login-registrate.html">Crear cuenta/Iniciar sesión</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>Informacion del contacto</h3>
+                        <hr class="line_footer">
+                        <ul class="info-contacto-list">
+                            <li><i class="fa-regular fa-location-dot"></i>Washington, USA 6036 Richmond
+                                hwy.,
+                                Alexandria, VA, 2230
+                            </li>
+                            <li><i class="fa-regular fa-phone"></i>+1 (234) 567 8901</li>
+                            <li><i class="fa-regular fa-envelope"></i>info@demolink.org</li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>Redes sociales</h3>
+                        <hr class="line_footer">
+                        <ul class="sm-icons">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+
+                        <h3>Suscribite a nuestro boletin</h3>
+                        <hr class="line_footer">
+                        <form action="">
+                            <label for="email">Email:</label>
+                            <input type="text" placeholder="email">
+                            <button class="email_enviar_btn">Enviar</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER COPYRIGHT  -->
+        <div class="footer_copy">
+            <img class="logo-leon" src="Img/Logo2.png" alt="leon logo">
+            <small>&copy; COPYRIGHT - 2022 <b>LEON</b> TODOS LOS DERECHOS RESERVADOS.</small>
+        </div>
+
+    </footer>
+
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
