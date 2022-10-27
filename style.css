@@ -230,8 +230,16 @@ body {
     justify-content: center;
     background: url(img/carousel1.png);
     background-size: cover;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: 40%;
 
+}
+
+@media all and (max-width: 1024px) {
+    .containter-main-banner {
+        background-position-x:65%;
+    
+    }
 }
 
 .p-banner {
