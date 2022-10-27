@@ -206,15 +206,20 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: rgb(194, 16, 16);
+    background-color: white;
 
 }
 
 .main-containter {
     width: 70%;
-    background-color: #d8d8d8;
+    background-color: white;
 }
 
+@media all and (max-width: 1024px) {
+    .main-containter {
+        width: 90%;
+    }
+}
 /*********** Main banner **********/
 .containter-main-banner {
     width: 100%;
@@ -508,7 +513,7 @@ body {
 }
 
 .product-btn {
-    width: 320px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -519,7 +524,7 @@ body {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 0;
-    width: 320px;
+    width: 90%;
     height: 43px;
     text-decoration: none;
     color: #f7c2b0;
