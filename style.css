@@ -101,6 +101,21 @@ img {
     margin-bottom: 0;
 }
 
+.nav-toggle {
+    border-radius: 3px;
+    font-size: 28px;
+    padding: 0 10px;
+    color: white;
+    background-color: #151515;
+    border: none;
+}
+
+.nav-toggle:hover {
+    color: black;
+    background: white;
+    transition: 0.3s;
+}
+
 .nav-menu li {
     list-style: none;
     margin: 4px;
@@ -181,46 +196,29 @@ img {
 @media all and (max-width: 1024px) {
 
     .nav-menu{
-        /* display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        text-align: center; */
-        /* transform: scale(0); */
-
         flex-direction: column;
         align-items: center;
         margin-right: 20px;
         background-color: gray;
         position: fixed;
-        left: 0;
-        top: 200px;
+        top: 150px;
         width: 100%;
         padding: 20px 0;
-        display: none;
-        height: calc(30% - 60px);
+        display: flex;
+        height: auto;
         overflow-y: auto;
-        /* left: 50%; */
-        transition: left 0.3s;
+        left: 100%;
+        transition: 1s;
+        
     }
 
     .nav-menu_visible {
         left: 0;
-        display: flex;
-        background-color: red;
+        /* display: none; */
+        background-color: rgb(255, 255, 255);       
     }
 
     
-
-    /* .hamburguesa-btn.active::before {
-        content: "cerrar";
-    } */
-
-    /* .main-ul.active {
-        transform: scale(1);
-    } */
 }
 
 /**************** End Header Style ************/
