@@ -853,3 +853,37 @@ ul {
 .color_p_custom {
     color:#f3906f;
 }
+
+.shadow-custom {
+  
+    width: 90%;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+}
+
+.color-custom-btn:hover {
+    background-color: #151515;
+    color: white;
+    
+}
+
+.color-custom-btn:focus {
+    box-shadow: none;
+    outline: #f3906f 1px solid;
+    
+}
+
+.color-custom-btn:not(.collapsed) {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: #151515;
+    border-radius: 25px;
+
+}
+
+.border-radius-btn {
+    border-radius: 25px !important;
+}
+.color-custom-btn {
+    border-radius: 25px !important;
+}
