@@ -816,19 +816,40 @@ ul {
 
 
 .preguntas_section {
+    padding-top: 24px;
     display: flex;
+    margin: 8px 0;
 
 }
 
-.preguntas_info {
-    background-color: aqua;
+.contenedor_side_info {
+    
     width: 50%;
     height: auto;
+    padding-left: 24px;
 }
 
 .preguntas_container {
-    border: #9b9b9b 1px solid;
+    
     width: 50%;
     height: auto;
 
+}
+
+.preguntas_frec_headings h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.preguntas_info p {
+    font-size: 14px;
+}
+
+.accordion-body {
+    font-size: 14px;
+}
+
+.color_p_custom {
+    color:#f3906f;
 }

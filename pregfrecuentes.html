@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas frecuentes</title>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,36 +27,45 @@
 
             <div class="content-logo">
 
-                <a class="header__link" href="Index.html"><img class="header__link__logo" src="Img/Logo1.png"
+                <a class="header__link" href="Index.html"><img class="header__link__logo" src="img/Logo1.png"
                         alt="Logo"></a>
 
             </div>
 
-            <button class="toggle-btn">holaaaaaaaaa</button>
+
+
 
             <div class="content-login-account">
                 <div class="login-cart-container">
                     <a class="header__login" href="Login-registrate.html">CREAR CUENTA/INICIAR SESIÓN</a>
 
-                    <a class="headercart__link" href="#"><img class="header__link__cartimg" src="Img/shopping-cart.png"
-                            alt="carrito de compra"></a>
+                    <a class="headercart__link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
 
+
                 <div class="nav-search-container">
-                    <ul class="main-ul">
-                        <li class="header__primerNav"><a href="#">Home</a></li>
+
+                    <div class="navegacion_mobile">
+                        <button class="mobile-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="mobile-button"><i class="fa-solid fa-user"></i></button>
+                        <button class="mobile-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+
+                    <ul class="nav-menu nav-menu_visible">
+                        <li class="header__primerNav"><a href="index.html">Home</a></li>
                         <li class="header__primerNav"><a href="#">Tienda</a></li>
                         <li class="header__primerNav"><a href="#">Contacto</a></li>
-                        <li class="header__primerNav"><a class="current-page" href="pregfrecuentes.html">Pregunta
-                                frecuente</a></li>
+                        <li class="header__primerNav"><a class="current-page" href="pregfrecuentes.html">Preguntas
+                                frecuentes</a></li>
                         <li class="header__primerNav"><a href="#">Nosotros</a></li>
                     </ul>
 
 
-                    <form action="search">
+                    <form class="formulario_search" action="search">
                         <label for="search-inp"></label>
                         <input class="search-input" id="search-inp" type="search" placeholder="Buscar">
-                        <button class="btn-search" type="submit"><img class="buscaricon" src="Img/search.png"
+                        <button class="btn-search" type="submit"><img class="buscaricon" src="img/search.png"
                                 alt="buscar"></button>
                     </form>
                 </div>
@@ -83,39 +92,88 @@
             <!-- END Main banner -->
 
             <section>
+                <!-- texto pre acordion -->
                 <div class="preguntas_introinfo">
                     <p>En esta sección encontrarás información sobre las preguntas más frecuentes que nos realizan
                         nuestros clientes.</p>
                     <p>Si tenés alguna duda adicional nos podés contactar a <a
                             href="mailto:leonmayorista@gmail.com.ar">leonmayorista@gmail.com.ar</a></p>
-
                 </div>
 
-                <div class="preguntas_section">
-                    <div class="preguntas_container">
 
+
+                
+
+
+                <div class="preguntas_section">
+                    <!-- 1er acordion -->
+                    <div class="preguntas_container">
+                        <div class="preguntas_frec_headings">
+                            <h2>MEDIOS DE PAGO</h2>
+                        </div>
                         <div class="accordion" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                         aria-controls="panelsStayOpen-collapseOne">
-                                        Accordion Item #1
+                                        Qué medios de pago ofrecemos?
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="panelsStayOpen-headingOne">
                                     <div class="accordion-body">
-                                        <strong>This is the first item's accordion body.</strong> It is shown by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element. These classes control the overall appearance, as well as the
-                                        showing and hiding via CSS transitions. You can modify any of this with custom
-                                        CSS or overriding our default variables. It's also worth noting that just about
-                                        any HTML can go within the <code>.accordion-body</code>, though the transition
-                                        does limit overflow.
+                                        Para la tienda online trabajamos con Mercado Pago. Para los pagos en los locales
+                                        podrás abonar en efectivo o con tarjetas.
+                                        <br>
+                                        <br>
+                                        <strong>Mercado Pago (Argentina):</strong> 
+                                        <br>
+                                        Podrás encontrar más información sobre esta plataforma y sus facilidades de pago
+                                        en MEDIOS DE PAGO Y PROMOCIONES.
+                                        La acreditación es inmediata. De haber algún error te pedimos que te contactes
+                                        con nosotros a <strong class="color_p_custom">ventas@gonails.com.ar</strong> o a nuestro número de WhatsApp <strong class="color_p_custom">+54 9 11
+                                        3648 7176</strong>.
                                     </div>
                                 </div>
                             </div>
+
+
+                        </div>
+                    </div>
+                    <!-- fin 1er acordion -->
+
+                    <!-- contenedor info -->
+                    <div class="contenedor_side_info">
+                        <div class="preguntas_frec_headings">
+                            <h2>RETIRO DE COMPRAS</h2>
+                        </div>
+                        <div class="preguntas_info">
+                            <p>En Go Nails tenemos 5 locales por los cuales podés pasar a retirar tus compras. Vas a
+                                poder
+                                elegir la sucursal en el proceso de compra. Te enviaremos un e-mail cuando tu compra
+                                esté
+                                lista para ser retirada.
+                                <br>
+                                <br>
+                                Si tenés alguna duda o inquietud con el estado de tu compra podés contactarnos a
+                                ventas@gonails.com.ar o por WhatsApp al (+54 9) 11 3648 7176.</p>
+                        </div>
+                    </div>
+                    <!-- fin contenedor info -->
+
+                </div>
+
+
+                <!-- segundo acordion -->
+                <div class="contenedor_acordion2">
+                    <div>
+                        <div class="preguntas_frec_headings">
+                            <h2>POLÍTICAS DE CAMBIOS Y DEVOLUCIONES</h2>
+                        </div>
+
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -158,14 +216,76 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- **************** 4 ************ -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFour">
+                                        Accordion Item #4
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingFour">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- *******5*******  -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFive">
+                                        Accordion Item #5
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingFive">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- *******  6  *******  -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseSix">
+                                        Accordion Item #6
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingSix">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
-                    <div class="preguntas_info">
-
-                    </div>
                 </div>
-
             </section>
 
 
