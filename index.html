@@ -32,19 +32,26 @@
 
             </div>
 
-            
-           
+
+
 
             <div class="content-login-account">
                 <div class="login-cart-container">
                     <a class="header__login" href="Login-registrate.html">CREAR CUENTA/INICIAR SESIÓN</a>
 
-                    <a class="headercart__link" href="#"><img class="header__link__cartimg" src="img/shopping-cart.png"
-                            alt="carrito de compra"></a>
+                    <a class="headercart__link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
 
+
                 <div class="nav-search-container">
-                    <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+
+                    <div class="navegacion_mobile">
+                        <button class="mobile-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="mobile-button"><i class="fa-solid fa-user"></i></button>
+                        <button class="mobile-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+
                     <ul class="nav-menu nav-menu_visible">
                         <li class="header__primerNav"><a class="current-page" href="#">Home</a></li>
                         <li class="header__primerNav"><a href="#">Tienda</a></li>
@@ -54,7 +61,7 @@
                     </ul>
 
 
-                    <form action="search">
+                    <form class="formulario_search" action="search">
                         <label for="search-inp"></label>
                         <input class="search-input" id="search-inp" type="search" placeholder="Buscar">
                         <button class="btn-search" type="submit"><img class="buscaricon" src="img/search.png"

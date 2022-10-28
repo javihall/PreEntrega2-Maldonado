@@ -50,6 +50,8 @@
     width: auto;
 }
 
+
+
 @media all and (max-width: 1024px) {
     .header__link {
         height: 90px;
@@ -63,10 +65,6 @@
     border-radius: 30px;
 }
 
-.header__link__cartimg {
-    width: 100%;
-}
-
 /* correccion de bootstrap */
 img {
     vertical-align: baseline;
@@ -74,13 +72,10 @@ img {
 
 /* fin correccion de bootstrap */
 
-.headercart__link {
-    height: 20px;
-    width: 20px;
-    padding: 2px;
-    border: none;
-    cursor: pointer;
 
+
+.headercart__link i {
+    color: black;
 }
 
 .buscaricon {
@@ -101,13 +96,30 @@ img {
     margin-bottom: 0;
 }
 
-.nav-toggle {
+.mobile-button {
     border-radius: 3px;
-    font-size: 28px;
-    padding: 0 10px;
+    font-size: 32px;
+    padding: 2.5px 8px;
     color: white;
     background-color: #151515;
     border: none;
+    display: none;
+}
+
+.mobile-button:hover {
+    color: black;
+    background: white;
+    transition: 0.3s;
+}
+
+.nav-toggle {
+    border-radius: 3px;
+    font-size: 32px;
+    padding: 2.5px 8px;
+    color: white;
+    background-color: #151515;
+    border: none;
+    display: none;
 }
 
 .nav-toggle:hover {
@@ -126,6 +138,23 @@ img {
     display: flex;
     align-items: flex-end;
     height: 50%;
+}
+
+@media all and (max-width: 1024px)
+{
+    .nav-search-container {
+        height: 100%;
+        width: 80%;
+    }
+}
+
+.navegacion_mobile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
 
 
@@ -194,6 +223,23 @@ img {
 
 /****** Header Breakpoints ********/
 @media all and (max-width: 1024px) {
+
+    .login-cart-container {
+        display: none;
+    }
+
+    .formulario_search {
+        display: none;
+    }
+
+    
+    .nav-toggle {
+        display: block;
+    }
+
+    .mobile-button {
+        display: block;
+    }
 
     .nav-menu{
         flex-direction: column;
