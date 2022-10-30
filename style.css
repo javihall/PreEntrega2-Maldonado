@@ -43,7 +43,7 @@
 /* Esto es para que cuando se convierta en menu hamburguesa el header width sea mas pequeño */
 @media all and (max-width: 1024px) {
     .navPrincipal {
-        width: 70%;
+        width: 90%;
     }
 }
 
@@ -59,8 +59,8 @@
 /* Para que la imagen logo se haga pequeño */
 @media all and (max-width: 1024px) {
     .header__link {
-        height: 90px;
-        width: auto;
+        height: 110px;
+        width: 90px;
     }
 
 }
