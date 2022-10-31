@@ -84,11 +84,15 @@ img {
 
 .headercart__link i {
     color: black;
+    padding: 4px;
+    border-radius: 5px;
 }
 
-.buscaricon {
-    width: 10px;
-    height: 10px;
+.headercart__link i:hover {
+    background-color: #151515;
+    border: white;
+    color: white;
+    
 }
 
 .content-login-account {
@@ -181,7 +185,7 @@ img {
 }
 
 .header__login {
-    padding-right: 16px;
+    margin-right: 16px;
     text-decoration: none;
     color: black;
 }
@@ -194,6 +198,12 @@ img {
     cursor: pointer;
     margin: 4px;
     border-radius: 5px;
+    color: #151515;
+}
+
+.btn-search:hover {
+   background-color: black;
+   color: white;
 }
 
 .search-input {
@@ -215,7 +225,8 @@ img {
     padding: 0 2px;
 }
 
-.nav-menu li a:hover {
+.nav-menu li a:hover,
+.header__login:hover {
     /* border-bottom: 2px solid white; */
     /* outline: 2px solid white ; */
     border-radius: 5px;
